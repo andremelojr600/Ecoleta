@@ -126,10 +126,11 @@
 {% block modal %}
     {% if saved %}
         {%include "partials/point-created.html"%}
-        
-        {%else%}
+    {% endif %}
+    {% if error %}
         {%include "partials/error-point-created.html"%}
     {% endif %}
+    
 {% endblock modal %}
 
 
