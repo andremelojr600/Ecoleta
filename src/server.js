@@ -106,6 +106,7 @@ server.get("/search-results", (req,res) => {
 
       console.log("Aqui estão seus registros")
       console.log(rows)
+    
       //mostrar a página html com os dados do db
       return res.render("search-results.html", {places:rows, total})
   })
